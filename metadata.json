@@ -1,0 +1,6 @@
+{
+  "name": "당당케어 (DangDang Care)",
+  "description": "당뇨 환자 및 전당뇨인을 위한 혈당·식단·운동 통합 관리 및 상관관계 분석 서비스",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    /* Increase base font size from default 16px to 18px (+12.5% larger across all rem units) */
+    font-size: 18px;
+  }
+
+  @media (min-width: 1280px) {
+    html {
+      /* Extra comfortable font sizing for desktop reading */
+      font-size: 19px;
+    }
+  }
+
+  body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  /* Prevent awkward mid-word breaks for buttons, navigation tabs, badges and headings */
+  button,
+  a,
+  label,
+  nav,
+  span,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    word-break: keep-all;
+  }
+
+  /* Increase input and select text size for senior-friendly readability */
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
